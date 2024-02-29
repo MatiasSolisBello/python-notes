@@ -26,7 +26,7 @@ muestre por pantalla el mensaje Yo estudio <asignatura>, donde <asignatura> es
 cada una de las asignaturas de la lista.
 """
 for subject in subjects:
-  print("I study", subject)
+    print("I study", subject)
 
 """
 Ejercicio 3
@@ -40,11 +40,11 @@ correspondientes notas introducidas por el usuario.
 """
 grades = []
 for subject in subjects:
-  grade = input(f'¿What grade have you get in {subject}?')
-  grades.append(grade)
+    grade = input(f'¿What grade have you get in {subject}?')
+    grades.append(grade)
 
 for subject, grade in zip(subjects, grades):
-  print(f'In {subject} you have a grade of {grade}')
+    print(f'In {subject} you have a grade of {grade}')
 
 """
 Ejercicio 4
@@ -56,8 +56,8 @@ menor a mayor.
 numbers = []
 
 for i in range(6):
-  number = input(f'¿What is the number {i+1}?  -> ')
-  numbers.append(number)
+    number = input(f'¿What is the number {i+1}?  -> ')
+    numbers.append(number)
 
 print('')
 print(sorted(numbers))
@@ -83,13 +83,13 @@ asignaturas que el usuario tiene que repetir.
 """
 grades = []
 for subject in subjects:
-  grade = int(input(f'¿What grade have you get in {subject}?  R: '))
-  grades.append(grade)
+    grade = int(input(f'¿What grade have you get in {subject}?  R: '))
+    grades.append(grade)
 
 for subject, grade in zip(subjects, grades):
-  if grade >= 4:
-    print(f'In {subject} you have a grade of {grade}')
-    subjects.pop(subject)
+    if grade >= 4:
+        print(f'In {subject} you have a grade of {grade}')
+        subjects.pop(subject)
 print(subjects)
 
 """
@@ -122,9 +122,9 @@ list_word_inverse = list(word)
 list_word_inverse.reverse()
 
 if list_word == list_word_inverse:
-  print(f'{word} is a palindrome')
+    print(f'{word} is a palindrome')
 else:
-  print(f'{word} is not a palindrome')
+    print(f'{word} is not a palindrome')
 
 """
 Ejercicio 9
@@ -137,11 +137,11 @@ word = input('Write a word: ')
 word = list(word)
 
 for vocal in vocals:
-  count = 0
-  for letter in word:
-    if vocal == letter:
-      count += 1
-  print(f'Vocal {vocal} - {count}')
+    count = 0
+    for letter in word:
+        if vocal == letter:
+            count += 1
+    print(f'Vocal {vocal} - {count}')
 
 """
 Ejercicio 10
@@ -160,8 +160,8 @@ Ejercicio 11
 Escribir un programa que almacene los vectores (1,2,3) y (-1,0,2) en dos listas
 y muestre por pantalla su producto escalar.
 """
-a = [1,2,3]
-b = [-1,0,2]
+a = [1, 2, 3]
+b = [-1, 0, 2]
 product = 0
 for i in range(len(a)):
     product += a[i]*b[i]
